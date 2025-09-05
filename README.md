@@ -1,42 +1,46 @@
-# Odoo E-Learning on Ubuntu Touch 📱
+## 📚 Odoo E-Learning on Ubuntu Touch
 
-## 🚀 Project Overview
-This project was developed for a **Hackathon Assignment** with the goal of building a **mobile app for Ubuntu Touch** that integrates with **Odoo OCA’s E-Learning module**.  
-
-The app enables users to:
-- 📚 Browse and enroll in courses  
-- 📝 Complete lessons and quizzes  
-- 📊 Track progress and certificates  
-- 🔑 Login with Odoo credentials  
-- 📥 Access courses offline  
+> Hackathon Project – Bringing Odoo E-Learning to Ubuntu Touch
 
 ---
 
-## 🎯 Objective
-Provide Odoo users with a **dedicated Ubuntu Touch app** to learn on the go, improving training and education workflows.  
+## 🚀 Overview
+This project delivers a **dedicated mobile app for Ubuntu Touch** that integrates seamlessly with **Odoo OCA’s E-Learning module**.  
+
+With this app, users can:
+- Browse and enroll in courses  
+- Complete lessons and quizzes  
+- Track progress and certificates  
+- Use offline mode for learning on the go  
+
+👉 It fills the gap of having **no official Odoo E-Learning app** on Ubuntu Touch.  
 
 ---
 
-## 🛠️ Tech Stack
+## 🎯 Features
+- 📖 **Course Catalog** – Discover and explore courses  
+- 📝 **Quizzes & Lessons** – Complete content within the app  
+- 📊 **Progress Tracking** – View enrolled courses and certificates  
+- 🔑 **Authentication** – Secure login using Odoo credentials  
+- 📥 **Offline Mode** – Download and access courses offline  
+
+---
+
+## 🛠 Tech Stack
 - **Frontend**: QML + JavaScript (Ubuntu Touch UI)  
-- **Backend**: Python (Odoo API integration)  
+- **Backend**: Python (Odoo API Integration)  
 - **API**: Odoo XML-RPC / REST API  
-- **Database**: SQLite (for offline caching)  
-- **Packaging**: Clickable app for Ubuntu Touch  
+- **Database**: SQLite (Offline caching)  
+- **Packaging**: Clickable App for Ubuntu Touch  
 
 ---
 
-## ✨ Core Features
-1. **Course Catalog** – View available courses  
-2. **Enrollment & Progress** – Enroll and track completion  
-3. **Content Viewing** – Lessons, videos, quizzes  
-4. **User Authentication** – Odoo login support  
-5. **Offline Mode** – Cache courses for offline access  
+## 🏗 Architecture
+```mermaid
+flowchart TD
+    A[Ubuntu Touch App - QML/JS] -->|User Actions| B[Python Backend Layer]
+    B -->|API Calls| C[Odoo Server with OCA E-Learning]
+    B --> D[SQLite Cache]
+    C -->|Course Data, Quizzes, Certificates| B
+    D -->|Offline Access| A
 
----
-
-## 📦 Installation
-### Step 1: Setup Odoo Backend
-1. Install Odoo with OCA E-Learning module  
-   ```bash
-   git clone https://github.com/OCA/e-learning
