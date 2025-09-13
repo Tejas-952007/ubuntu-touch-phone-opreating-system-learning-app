@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>components/WelcomePage.qml</file>
+        <file>components/LoginPage.qml</file>
+        <file>components/SignupPage.qml</file>
+        <file>components/CatalogPage.qml</file>
+        <file>components/CourseContentPage.qml</file>
+        <file>components/LessonPage.qml</file>
+        <file>components/QuizPage.qml</file>
+        <file>components/ScorePage.qml</file>
+        <file>components/ProfilePage.qml</file>
+        <file>components/CourseDelegate.qml</file>
+        <file>dialogs/VideoDialog.qml</file>
+        <file>dialogs/CertificateDialog.qml</file>
+        <file>dialogs/CourseDetailsDialog.qml</file>
+        <file>dialogs/DownloadDialog.qml</file>
+        <file>dialogs/SyncDialog.qml</file>
+        <file>utils/OdooAPI.js</file>
+        <file>utils/CertificateManager.js</file>
+        <file>utils/SettingsManager.js</file>
+        <file>images/logo.png</file>
+        <file>images/bg.png</file>
+    </qresource>
+</RCC>
