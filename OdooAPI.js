@@ -1,4 +1,3 @@
-// Minimal stub for Odoo integration. Replace with real RPC/REST calls.
 
 function getCourses() {
     // Return promise-like object
