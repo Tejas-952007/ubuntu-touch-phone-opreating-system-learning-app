@@ -14,7 +14,7 @@ TextInput.Password }
 Button {
 text: "Create account"
 onClicked: {
-// Minimal validation, then go to catalog
+
 if (name.text && email.text && password.text) {
 SettingsManager.saveToken("demo-token")
 stackView.push(Qt.resolvedUrl("CatalogPage.qml"))
